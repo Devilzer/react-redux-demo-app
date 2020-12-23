@@ -6,16 +6,17 @@ import CookieContainer from "./components/CookieContainer";
 import NewCookieContainer from "./components/NewCookieContainer";
 import { Provider } from "react-redux";
 import  store  from "./redux/store";
-
+import UserContainer from "./components/UserContainer";
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <HooksCakeContainer/>
+        <UserContainer/>
+        {/* <HooksCakeContainer/>
         <Cakecontainer/>
         <IceCreamContainer/>
         <CookieContainer/>
-        <NewCookieContainer/>
+        <NewCookieContainer/> */}
       </div>
     </Provider>
     );
