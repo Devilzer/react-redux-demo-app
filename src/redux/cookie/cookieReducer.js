@@ -7,7 +7,7 @@ const reducer =  (state = initialState ,action) =>{
         case "BUY_COOKIE":
             return{
                 ...state,
-                numOfCookies : state.numOfCookies -1
+                numOfCookies : state.numOfCookies -action.payload
             };
         default:
             return state;
